@@ -4,6 +4,7 @@
   src: url("../fonts/web/opensans.woff2") format("woff2"),
     url("/fonts/web/opensans.woff2") format("woff");
   font-weight: 400;
+  font-display: swap;
 }
 
 @font-face {
@@ -11,6 +12,7 @@
   src: url("../fonts/web/gilroyextrabold.woff2") format("woff2"),
     url("../fonts/web/gilroyextrabold.woff") format("woff");
   font-weight: 800;
+  font-display: swap;
 }
 
 @font-face {
@@ -18,6 +20,7 @@
   src: url("../fonts/web/gilroylight.woff2") format("woff2"),
     url("../fonts/web/gilroylight.woff") format("woff");
   font-weight: 300;
+  font-display: swap;
 }
 
 /* ======== Variabels ======== */
