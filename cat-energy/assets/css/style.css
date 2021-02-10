@@ -391,6 +391,10 @@ img {
   border-bottom: 2px solid #68B738;
 }
 
+.menu-list--non {
+  display: none;
+}
+
 .main {
   width: 320px;
   margin: 0 auto;
@@ -698,6 +702,61 @@ img {
   text-transform: uppercase;
 }
 
+.after-before__images {
+  height: auto;
+  margin-bottom: 23px;
+}
+
+.after-before__images--after {
+  display: none;
+  text-align: right;
+  right: 68px;
+}
+
+.after-form {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.after-form__checkbox {
+  width: 84px;
+  height: 14px;
+  font-size: 0;
+  position: relative;
+  border-radius: 6px;
+  background-color: #ffffff;
+  border: 1px solid #CDCDCD;
+}
+
+.after-form__checkbox:after {
+  content: "";
+  width: 35px;
+  height: 6px;
+  position: absolute;
+  top: 3px;
+  left: 5px;
+  z-index: 100;
+  border-radius: 6px;
+  background-color: #68B738;
+}
+
+.after-form__text {
+  font-family: 'Oswald Regular', sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.after-form__text--after {
+  padding-right: 12px;
+}
+
+.after-form__text--before {
+  padding-left: 12px;
+}
+
 @media (min-width: 768px) {
   .header {
     width: 768px;
@@ -902,13 +961,10 @@ img {
   }
 
   .compare {
+    min-height: 1081px;
     padding-top: 43px;
     border-top: 1px solid #eaeaea;
-    background-color: #ffffff;
-  }
-
-  .compare {
-    border: none;
+    background: linear-gradient(to bottom, #ffffff 619px, #eaeaea 619px 1081px);
   }
 
   .compare__title {
@@ -918,9 +974,59 @@ img {
   }
 
   .compare__text {
+    margin-bottom: 54px;
     font-size: 16px;
     line-height: 24px;
     color: #444444;
+  }
+
+  .compare-wrapper {
+    margin-bottom: 250px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: right;
+  }
+
+  .compare-list {
+    justify-content: flex-start;
+  }
+
+  .compare-list__item {
+    margin-right: 42px;
+  }
+
+  .compare-list fieldset {
+    width: 162px;
+  }
+
+  .working-list__legend {
+    background-color: #ffffff;
+  }
+
+  .compare-list__subtitle {
+    max-width: 175px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .after-before {
+    position: relative;
+  }
+
+  .after-before__images {
+    position: absolute;
+    top: -200px;
+  }
+
+  .after-before__images--before {
+    display: block;
+    left: 0;
+  }
+
+  .after-before__images--after {
+    display: block;
   }
 }
 
@@ -1061,7 +1167,7 @@ img {
   }
 
   .compare {
-    padding-top: 60px;
+    border: none;
   }
 
   .compare__title {
@@ -1071,6 +1177,19 @@ img {
   .compare__text {
     max-width: 436px;
     margin-bottom: 69px;
+  }
+
+  .compare-wrapper {
+    display: block;
+    text-align: left;
+  }
+
+  .compare-list__subtitle {
+    max-width: 436px;
+  }
+
+  .price {
+    padding-left: 63px;
   }
 }
 
