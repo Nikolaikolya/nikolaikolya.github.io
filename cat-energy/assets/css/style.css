@@ -175,12 +175,31 @@ button:-moz-focusring,
  * Correct the padding in Firefox.
  */
 
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
 /**
  * 1. Correct the text wrapping in Edge and IE.
  * 2. Correct the color inheritance from `fieldset` elements in IE.
  * 3. Remove the padding so developers are not caught out when they zero out
  *    `fieldset` elements in all browsers.
  */
+
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */
+}
 
 /**
  * Add the correct vertical alignment in Chrome, Firefox, and Opera.
@@ -601,6 +620,84 @@ img {
   background-size: cover;
 }
 
+.compare {
+  width: 320px;
+  padding: 0 20px;
+  margin: 0 auto;
+  padding-top: 27px;
+  background-color: #eaeaea;
+}
+
+.compare__title {
+  margin: 0;
+  margin-bottom: 33px;
+  padding: 0;
+  font-family: 'Oswald Regular', sans-serif;
+  font-size: 36px;
+  line-height: 40px;
+}
+
+.compare__text {
+  margin-bottom: 26px;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  color: #444444;
+}
+
+.compare-wrapper {
+  text-align: center;
+}
+
+.compare-list {
+  margin: 0;
+  margin-bottom: 25px;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.compare-list fieldset {
+  width: 124px;
+  padding: 17px 0;
+  position: relative;
+  box-sizing: border-box;
+  border-color: #CDCDCD;
+  border-radius: 3px;
+  text-align: center;
+}
+
+.working-list__legend {
+  max-width: 77px;
+  padding-left: 15px;
+  padding-right: 15px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  background-color: #eaeaea;
+  font-family: 'Oswald Regular', sans-serif;
+  font-size: 12px;
+  line-height: 12px;
+  color: #444444;
+}
+
+.compare-list__text {
+  margin: 0;
+  font-family: 'Oswald Regular', sans-serif;
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.compare-list__subtitle {
+  margin-bottom: 42px;
+  font-family: 'Oswald Regular', sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
 @media (min-width: 768px) {
   .header {
     width: 768px;
@@ -798,6 +895,33 @@ img {
     line-height: 280px;
     color: #F2F2F2;
   }
+
+  .compare {
+    width: 768px;
+    padding: 0 30px;
+  }
+
+  .compare {
+    padding-top: 43px;
+    border-top: 1px solid #eaeaea;
+    background-color: #ffffff;
+  }
+
+  .compare {
+    border: none;
+  }
+
+  .compare__title {
+    margin-bottom: 63px;
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .compare__text {
+    font-size: 16px;
+    line-height: 24px;
+    color: #444444;
+  }
 }
 
 @media (min-width: 1300px) {
@@ -919,11 +1043,34 @@ img {
   }
 
   .working-list {
+    margin-bottom: 0;
     justify-content: space-between;
+  }
+
+  .working-list__item {
+    margin-bottom: 0;
   }
 
   .working-list__item:nth-child(odd) {
     margin-right: 0px;
+  }
+
+  .compare {
+    width: 1300px;
+    padding: 0 40px;
+  }
+
+  .compare {
+    padding-top: 60px;
+  }
+
+  .compare__title {
+    margin-bottom: 146px;
+  }
+
+  .compare__text {
+    max-width: 436px;
+    margin-bottom: 69px;
   }
 }
 
